@@ -45,4 +45,14 @@ img {
 .carousel-inner {
   max-width: 100%;
   max-height: auto;
+
+  .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 572px;
+    background: rgba(0, 0, 0, 0.7);
+  }
 }
