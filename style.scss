@@ -37,22 +37,27 @@ $carousel-dark-control-icon-filter: invert(1) grayscale(100);
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+h5,
+p {
+  font-weight: bold;
+  text-shadow: 2px 1px black;
 }
 
-.carousel-inner {
-  max-width: 100%;
-  max-height: auto;
-
-  .carousel-item img {
-    position: absolute;
+.carousel {
+  &__img {
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
-    width: 100%;
+  }
+
+  &__caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    min-height: 572px;
-    background: rgba(0, 0, 0, 0.7);
   }
 }
